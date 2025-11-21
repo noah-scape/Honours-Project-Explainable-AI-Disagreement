@@ -22,8 +22,8 @@ class primary:
                 self.fvs_scores={}   #Fairwashing scores
                 self.shap_explanations ={}
                 self.lime_explanations ={}
-                self.train_raw = r'C:\Users\noahp\OneDrive - UTS\Honours Folder\UNSW_NB15_training-set.parquet'
-                self.test_raw =r'C:\Users\noahp\OneDrive - UTS\Honours Folder\UNSW_NB15_testing-set.parquet'
+                self.train_raw = r'UNSW_NB15_training-set.parquet'
+                self.test_raw =r'UNSW_NB15_testing-set.parquet'
     def main(self,random_val):
                  self.random_val = random_val
                  self.models = {}
@@ -523,4 +523,5 @@ class primary:
 
 if __name__=="__main__":
     obj =primary()
+
     obj.run_pipeline(random_val=42,size=100)
